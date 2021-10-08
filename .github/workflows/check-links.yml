@@ -10,10 +10,10 @@ jobs:
     steps:
       # Version 2.0.19 of linkcheck
       - name: Check docs links with linkcheck
-        uses: filiph/linkcheck@342ae586489f6bf1113ba2ec793eb806896a3be1
+        uses: StephenFluin/linkcheck-action
         with:
-          arguments: https://docs.chain.link/ -e 
+          arguments: https://docs.chain.link/
       - name: Check chain.link with linkcheck
-        uses: filiph/linkcheck@342ae586489f6bf1113ba2ec793eb806896a3be1
+        uses: StephenFluin/linkcheck-action
         with:
-          arguments: https://chain.link -e
+          arguments: https://chain.link
