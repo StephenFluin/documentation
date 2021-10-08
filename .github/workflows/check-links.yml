@@ -1,8 +1,7 @@
 name: Check Docs and Site Links
 
 on:
-  schedule:
-    - cron: '3/7 * * * *'
+  [push, pull_request]
 
 jobs:
   check-links:
@@ -13,8 +12,8 @@ jobs:
       - name: Check docs links with linkcheck
         uses: filiph/linkcheck@342ae586489f6bf1113ba2ec793eb806896a3be1
         with:
-          arguments: -e https://docs.chain.link/
+          arguments: https://docs.chain.link/ -e 
       - name: Check chain.link with linkcheck
         uses: filiph/linkcheck@342ae586489f6bf1113ba2ec793eb806896a3be1
         with:
-          arguments: -e https://chain.link
+          arguments: https://chain.link -e
