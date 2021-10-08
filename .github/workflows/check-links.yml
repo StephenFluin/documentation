@@ -2,7 +2,7 @@ name: Check Docs and Site Links
 
 on:
   schedule:
-    - cron: '30 8 * * *'
+    - cron: '*/10 * * * *'
 
 jobs:
   check-links:
