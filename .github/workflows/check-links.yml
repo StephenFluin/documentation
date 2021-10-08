@@ -8,7 +8,7 @@ jobs:
     name: Regularly check links
     runs-on: ubuntu-latest
     steps:
-      # Version 2.0.19 of linkcheck
+      # Stephen's fork of the Dark Linkchecker by filiph
       - name: Check docs links with linkcheck
         uses: StephenFluin/linkcheck-action@master
         with:
